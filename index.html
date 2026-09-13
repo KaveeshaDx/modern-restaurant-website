@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savoria | Modern Restaurant</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience the taste of perfection at Savoria. A modern restaurant offering exquisite culinary delights, fresh ingredients, and a beautiful dining atmosphere.">
+    <meta name="keywords" content="restaurant, fine dining, food, dinner, savoria, modern restaurant">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3170/3170733.png">
+    
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -54,7 +60,31 @@
     <!-- Menu Section -->
     <section id="menu" class="menu section-padding bg-dark">
         <div class="container">
-            <h2 class="section-title text-center reveal">Our Specialities</h2>
+            <h2 class="section-title text-center reveal">Our Menu</h2>
+            
+            <!-- Category: Starters -->
+            <h3 class="category-title reveal">Starters</h3>
+            <div class="menu-grid">
+                <div class="menu-item reveal">
+                    <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Starter">
+                    <div class="menu-info">
+                        <h3>Tomato Bruschetta</h3>
+                        <p>Toasted baguette with fresh tomatoes, garlic, and basil.</p>
+                        <span class="price">$12.00</span>
+                    </div>
+                </div>
+                <div class="menu-item reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Salad">
+                    <div class="menu-info">
+                        <h3>Caesar Salad</h3>
+                        <p>Crisp romaine, parmesan, croutons, and house dressing.</p>
+                        <span class="price">$14.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Main Courses -->
+            <h3 class="category-title reveal" style="margin-top: 60px;">Main Courses</h3>
             <div class="menu-grid">
                 <div class="menu-item reveal">
                     <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Dish 1">
@@ -78,6 +108,19 @@
                         <h3>Pasta Carbonara</h3>
                         <p>Authentic Italian pasta with guanciale and pecorino.</p>
                         <span class="price">$16.00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Desserts -->
+            <h3 class="category-title reveal" style="margin-top: 60px;">Desserts</h3>
+            <div class="menu-grid">
+                <div class="menu-item reveal">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c8a9e9cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Dessert">
+                    <div class="menu-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Warm chocolate cake with a molten center, vanilla ice cream.</p>
+                        <span class="price">$10.00</span>
                     </div>
                 </div>
             </div>
@@ -117,11 +160,12 @@
         <div class="container">
             <h2 class="section-title text-center reveal">Contact Us</h2>
             <div class="contact-wrapper reveal">
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="button" class="btn">Send Message</button>
+                <!-- Changed to use Formspree for real email delivery -->
+                <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
